@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome back, commander</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@600&display=swap" rel="stylesheet">
+</head>
+<body class="light">
+    <nav class="responsive-div" id="navbar">
+        <div id="nav-items">
+            <ul>
+                <li><a href="#welcome-section" class="responsive-text">About</a></li>
+                <li><a href="#projects" class="responsive-text">Projects</a></li>
+                <li><a href="#contacts" class="responsive-text">Contacts</a></li>
+            </ul>
+        </div>
+        <div id="switcher">
+            <input type="checkbox" name="theme" id="switch" value="dark_theme"/>
+            <label for="switch" id="switch-label" class="responsive-text">Dark theme</label>
+        </div>
+    </nav>
+    <main>
+        <section class="main-section responsive-div" id="welcome-section">
+            <div id="welcome-text">
+                <h1 class="responsive-text">Welcome</h1>
+                <p class="responsive-text">I want to be a frontend developer</p>
+                <p class="responsive-text">And this is my personal page</p>
+            </div>
+        </section>
+
+        <section class="main-section responsive-div" id="projects">
+            <h2 class="responsive-text">These are some of my projects</h2>
+            <div id="grid-handler">
+                <div class="section-project">
+                    <figure class="project-tile" id="project-survey">
+                        <a href="#">
+                          <img src="./src/Survey.PNG" alt="FCC's survey">
+                          <figcaption class="responsive-text">FCC's Survey form</figcaption>
+                        </a>
+                    </figure>
+                </div>
+    
+                <div class="section-project">
+                    <figure class="project-tile" id="project-product">
+                        <a href="#">
+                          <img src="./src/Product.PNG" alt="FCC's product landing page">
+                          <figcaption class="responsive-text">FCC's Product landing page</figcaption>
+                        </a>
+                    </figure>
+                </div>
+    
+                <div class="section-project">
+                    <figure class="project-tile" id="project-tech">
+                        <a href="#">
+                          <img src="./src/Tech.PNG" alt="FCC's technical page">
+                          <figcaption class="responsive-text">FCC's technical page</figcaption>
+                        </a>
+                    </figure>
+                </div>
+    
+                <div class="section-project">
+                    <figure class="project-tile" id="project-tribute">
+                        <a href="#">
+                          <img src="./src/Tribute.PNG" alt="FCC's Tribute">
+                          <figcaption class="responsive-text">FCC's Tribute</figcaption>
+                        </a>
+                    </figure>
+                </div>
+
+                <div class="section-project">
+                    <figure class="project-tile" id="project-machine">
+                        <a href="#">
+                          <img src="./src/RQM_v2.PNG" alt="FCC's Random Quote Machine">
+                          <figcaption class="responsive-text">FCC's Random Quote Machine</figcaption>
+                        </a>
+                    </figure>
+                </div>
+
+            </div>
+            
+        </section>
+
+        <section class="main-section responsive-div" id="contacts">
+            <h2 class="responsive-text">So, what do you want to tell me?</h2>
+            
+            <div id="contacts-wrapper">
+                <ul id="contacts-sources">
+                    <li><a href="#"><i class="fab fa-vk"></i></i> <span>VK</span></a></li>
+                    <li><a href="#"><i class="fas fa-at"></i></i><span>Mail</span></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></i><span>Twitter</span></a></li>
+                    <li><a href="#"><i class="fab fa-codepen"></i></i><span>Codepen</span></a></li>
+                    <li><a href="#"><i class="fab fa-github"></i></i><span>Github</span></a></li>
+                    <li><a href="https://www.freecodecamp.org/fcc7c80f0b9-3b4f-42ae-a1ba-330515ddd43c" 
+                        id="profile-link"><i class="fab fa-free-code-camp"></i></i><span>FCC</span></a></li>
+                </ul>
+            </div>
+            
+        </section>
+
+        <footer class="responsive-div">
+            <p class="responsive-text">2020 - 2020</p>
+        </footer>
+    </main>
+
+    <!-- The main idea is taken from FreeCodeCamp's portfolio example -->
+
+    <script src="./switcher.js"></script>
+</body>
+</html>
